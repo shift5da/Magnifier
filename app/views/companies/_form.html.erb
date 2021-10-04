@@ -36,6 +36,14 @@
     <%= form.text_field :contact_phone %>
   </div>
 
+  <div class="field">
+    <%= form.label :avatar %>
+    <%= form.file_field :avatar, multiple: false %>
+  </div>
+
+
+
+
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -1,29 +1,179 @@
-<p id="notice"><%= notice %></p>
+<!-- Main content -->
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
 
-<p>
-  <strong>Name:</strong>
-  <%= @company.name %>
-</p>
+        <!-- Profile Image -->
+        <div class="card card-primary card-outline">
+          <div class="card-body box-profile">
+            <div class="text-center">
+              <img class="profile-user-img img-fluid img-circle" src="<%= image_path("xg_tea")%>" alt="User profile picture">
+            </div>
 
-<p>
-  <strong>Address:</strong>
-  <%= @company.address %>
-</p>
+            <h3 class="profile-username text-center">云南下关沱茶（集团）股份有限公司</h3>
 
-<p>
-  <strong>Image:</strong>
-  <%= @company.image %>
-</p>
+            <p class="text-muted text-center">云南大理市</p>
 
-<p>
-  <strong>Contact:</strong>
-  <%= @company.contact %>
-</p>
+            <hr>
+            <strong>
+              <i class="fa fa-phone mr-1"></i>
+              联系信息</strong>
 
-<p>
-  <strong>Contact phone:</strong>
-  <%= @company.contact_phone %>
-</p>
+            <p class="text-muted">
+              张三，188-8888-8888
+            </p>
 
-<%= link_to 'Edit', edit_company_path(@company) %> |
-<%= link_to 'Back', companies_path %>
+            <hr>
+
+            <strong>
+              <i class="fa fa-map-marker mr-1"></i>
+              地址</strong>
+
+            <p class="text-muted">中国云南大理市下关镇建设西路13号</p>
+
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+      </div>
+      <!-- /.col -->
+      <div class="col-md-9">
+        <div class="card">
+          <div class="card-header p-2">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" href="#activity" data-toggle="tab">企业介绍</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#timeline" data-toggle="tab">企业照片</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.card-header -->
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="active tab-pane" id="activity">
+                <!-- Post -->
+                <div class="post">
+
+                  <p>
+                    云南下关沱茶（集团）股份有限公司是一家集茶产品的研发、生产与销售为一体的茶叶企业。下关沱茶品牌创制于1902年，距今已有119年的历史。公司前身为创建于1941年的康藏茶厂，50年代中期改为“云南省下关茶厂”，1994年改制为“云南下关沱茶股份有限公司”。2004年民营化改制，经过几代人的艰苦奋斗现已成为历史底蕴深、生产规模大、带动能力强、质量技术优、品牌信誉好、销售网络全的股权多元化、市场国际化的集团公司。公司位于历史文化名城——大理，其优质的生态环境，为下关沱茶的生产加工提供了得天独厚的自然条件。
+                  </p>
+                  <p>
+                    建厂以来，我公司奉行“诚信经营，质量为先”的经营理念，肩负“传承茶马古道精神，传播茶道文化，为世人奉献优质茶品与服务”的使命，坚持“大气明理、诚信进取、匠心传承、知己好茶”的价值观。历经岁月洗礼，我公司现成为同时拥有八顶国家级桂冠的茶业企业，即：国家边销茶定点生产企业及原料储备企业、国家茶叶加工技术研发分中心、农业产业化国家重点龙头企业、国家扶贫龙头企业、中国驰名商标、中华老字号、国家地理标志保护产品、“下关沱茶制作技艺”在第三批国家级非物质文化遗产名录榜上有名。
+                  </p>
+                  <p>
+                    公司主要生产以普洱紧压茶为主，其余茶类为辅的五大茶类200多个品种。公司生产的松鹤延年牌下关甲沱沱茶和下关特沱沱茶分别被评为2019年和2020年云南省“10大名茶”。以“松鹤牌、宝焰牌、下关牌”为代表的众多产品多次荣获国际、国家、省部级奖项与荣誉，并通过ISO 9001国际质量体系认证、绿色食品认证、FDA认证。产品实行全国连锁专卖，主要销往国内30多个省市（区），并出口欧盟、俄罗斯、日本、韩国、马来西亚等10多个国家。
+
+                  </p>
+                  <p>
+                    展望未来，我公司于大理市食品工业园区（银桥镇）投资2亿多元，占地面积304亩，建筑面积10.1万平方米建设的新厂区，已稳步投入使用。新厂区以“清洁化、自动化、标准化”发展为依托，蓄力谱写百年品牌的新篇章！
+
+                  </p>
+
+                  <hr>
+
+                  <p>
+                    <span class="float-right">
+                      <button type="submit" class="btn btn-danger">修改</button>
+                    </span>
+                  </p>
+                </div>
+                <!-- /.post -->
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="timeline">
+
+                <div class="row row-cols-1 row-cols-md-3">
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="<%= image_path("IMG_1")%>" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">
+                          https://cdn.shopify.com/s/files/1/0576/2583/7777/files/IMG_8125_8b2d4db4-d417-4ee4-85fa-971a4bb25553.jpg?v=1626240493</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="<%= image_path("IMG_2")%>" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">
+                          https://cdn.shopify.com/s/files/1/0576/2583/7777/files/IMG_8125_8b2d4db4-d417-4ee4-85fa-971a4bb25553.jpg?v=1626240493</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="<%= image_path("IMG_3")%>" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">
+                          https://cdn.shopify.com/s/files/1/0576/2583/7777/files/IMG_8125_8b2d4db4-d417-4ee4-85fa-971a4bb25553.jpg?v=1626240493</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="<%= image_path("IMG_4")%>" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">
+                          https://cdn.shopify.com/s/files/1/0576/2583/7777/files/IMG_8125_8b2d4db4-d417-4ee4-85fa-971a4bb25553.jpg?v=1626240493</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="<%= image_path("IMG_5")%>" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">
+                          https://cdn.shopify.com/s/files/1/0576/2583/7777/files/IMG_8125_8b2d4db4-d417-4ee4-85fa-971a4bb25553.jpg?v=1626240493</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col mb-4">
+                    <div class="card">
+                      <img src="<%= image_path("IMG_6")%>" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">
+                          https://cdn.shopify.com/s/files/1/0576/2583/7777/files/IMG_8125_8b2d4db4-d417-4ee4-85fa-971a4bb25553.jpg?v=1626240493</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- /.tab-pane -->
+
+            </div>
+            <!-- /.tab-content -->
+          </div>
+          <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+</section>

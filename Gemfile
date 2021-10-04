@@ -55,4 +55,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'turbolinks', '~> 5.2.1'
 gem 'jquery-rails', '~> 4.4.0'
-gem "font-awesome-rails"
+gem 'carrierwave', '~> 2.0'

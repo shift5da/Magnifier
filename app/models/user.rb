@@ -8,9 +8,15 @@ class User < ApplicationRecord
 
   has_one :company
 
-
+  #Singleton methods
   def self.authenticate(account, password)
     User.find_by account: account, password: password
+  end
+  
+
+  #public methods
+  def is_company?
+    !:company.nil?
   end
 
 end
